@@ -1,10 +1,11 @@
 # recipe-seo-encoding
 
-> ![warning] vibe-coded
+> [!WARNING]
+> This project is **entirely vibe-coded** and the author is a _dumb-dumb_ who thought the idea was funny
+
+Use SEO-gaming recipe preambles as a vehicle for encoding secret messages (the prompt can really be anything though, the shared prompt is simply a key that both encoder and decoder agree on).
 
 Hides secret messages in natural-looking text using arithmetic steganography over a language model's token distributions. The generated text is statistically close to normal model output — each token was a plausible next token in context.
-
-The original idea: use SEO-gamifying recipe preambles as a vehicle for encoding secret messages. Give the model a recipe prompt, and it produces a convincing recipe blog preamble that secretly encodes your hidden message (the prompt can really be anything though, the shared prompt is simply a key that both encoder and decoder agree on).
 
 ## How it works
 
@@ -38,7 +39,8 @@ uv pip install -r requirements.txt
 
 ## Usage
 
-> ![note] Set the `HF_TOKEN` environment variable to authenticate to HuggingFace
+> [!NOTE]
+> Set the `HF_TOKEN` environment variable to authenticate to HuggingFace
 
 ### Encode a secret message
 
@@ -60,12 +62,12 @@ python main.py decode --stego-file stego_output.txt
 # Encode with a custom prompt
 python main.py encode \
     --message "meet me at noon" \
-    --prompt "The best thing about making scrambled eggs is"
+    --prompt "The best thing about making scrambled eggs is: "
 
 # Decode (prompt must match exactly!)
 python main.py decode \
     --stego-file stego_output.txt \
-    --prompt "The best thing about making scrambled eggs is"
+    --prompt "The best thing about making scrambled eggs is: "
 
 # Use a different model
 python main.py encode \

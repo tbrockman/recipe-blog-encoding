@@ -15,12 +15,12 @@ Usage:
     # Encode a secret message
     python stego.py encode \
         --message "attack at dawn" \
-        --prompt "The best thing about making scrambled eggs is"
+        --prompt "The best thing about making scrambled eggs is: "
 
     # Decode from stego text (prompt must match!)
     python stego.py decode \
         --stego-file stego_output.txt \
-        --prompt "The best thing about making scrambled eggs is"
+        --prompt "The best thing about making scrambled eggs is: "
 
     # Use a specific model
     python stego.py encode \
