@@ -5,7 +5,7 @@
 
 Use SEO-gaming recipe preambles as a vehicle for encoding secret messages (the prompt can really be anything though, the shared prompt is simply a key that both encoder and decoder agree on).
 
-Hides secret messages in natural-looking text using [neural linguistic steganography](https://aclanthology.org/D19-1115/) over a language model's token distributions.
+Hides secret messages in natural-looking text using [neural linguistic steganography](https://aclanthology.org/D19-1115/).
 
 ## How it works
 
