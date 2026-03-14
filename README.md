@@ -1,4 +1,4 @@
-# recipe-seo-encoding
+# recipe-blog-encoding
 
 > [!WARNING]
 > This project is **entirely vibe-coded** <sup>(likely partially plagiarized from [this repository](https://github.com/artkpv/arithmetic-coding-steganography))</sup> and the author is a _dumb-dumb_ who just thought the idea was funny
@@ -6,6 +6,24 @@
 Use SEO-gaming recipe preambles as a vehicle for encoding secret messages (the prompt can really be anything though, the shared prompt is simply a key that both encoder and decoder agree on).
 
 Hides secret messages in natural-looking text using [neural linguistic steganography](https://aclanthology.org/D19-1115/).
+
+## Example
+
+```md
+ If you're craving something hearty, flavorful, and just a little bit indulgent, then this **Garlic Butter Steak Fajitas** recipe is exactly what you need. Combining the bold flavors of sizzling skirt steak, crispy bell peppers, and aromatic garlic and butter, this dish is a delicious fusion of steakhouse and Tex-Mex cuisine, all in one pan.
+
+   The best part? It's ready in under 30 minutes, making it a perfect weeknight recipe that still feels like something special. Whether you're serving it in warm tortillas or over rice for something heartier, the rich, savory flavor profile will have everyone asking for seconds—and the recipe.
+
+   This recipe not only delivers on flavor, but it also scores big when it comes to SEO optimization. Packed with high-interest keywords like *steak fajitas*, *butter steak recipe*, and *easy vegetarian fajitas*, this post is designed to rank well for casual cooks and meal planners alike.
+
+   What sets this recipe apart is the use of garlic butter, which adds a luxurious depth of flavor that’s often missing in traditional fajita recipes. The steak is marinated in a simple but effective blend of lime, cumin, and chili powder before being seared to perfection and tossed with the veg in the same pan for maximum flavor.
+
+   And for those who want to make it vegetarian or vegan, the recipe includes easy substitutions—like portobello mushrooms or tofu strips—to keep the same satisfying texture and taste.
+
+   You’ll find that the ingredients are simple and easy to find, with no obscure spices or hard-to-source proteins. Just a few pantry staples and a cut of steak (or a plant-based alternative) are all you need to make this dish come together in a flash.
+
+   The recipe also includes helpful tips for cooking steak fajitas on the stove
+```
 
 ## How it works
 
@@ -84,9 +102,8 @@ python main.py encode \
 | `--prompt` | *(recipe SEO preamble)* | Context prompt (must match between encode/decode) |
 | `--message` | *(interactive)* | Secret message to encode |
 | `--stego-text` | | Stego text string to decode |
-| `--stego-file` | | File containing stego text to decode |
+| `--stego-file` | `stego_output.txt` | Stego text file (output for encode, input for decode) |
 | `--top-k` | `256` | Top-k vocabulary size for CDF |
-| `--max-tokens` | `512` | Maximum tokens to generate |
+| `--max-tokens` | *(unlimited)* | Maximum tokens to generate |
 | `--device` | `cuda` | Device: `cuda` or `cpu` |
 | `--no-4bit` | off | Disable 4-bit quantization (uses fp16; needs more VRAM) |
-| `--output` | `stego_output.txt` | Output file for stego text |
