@@ -7,24 +7,6 @@ Use SEO-gaming recipe preambles as a vehicle for encoding secret messages (the p
 
 Hides secret messages in natural-looking text using [neural linguistic steganography](https://aclanthology.org/D19-1115/).
 
-## Example
-
-```md
- If you're craving something hearty, flavorful, and just a little bit indulgent, then this **Garlic Butter Steak Fajitas** recipe is exactly what you need. Combining the bold flavors of sizzling skirt steak, crispy bell peppers, and aromatic garlic and butter, this dish is a delicious fusion of steakhouse and Tex-Mex cuisine, all in one pan.
-
-   The best part? It's ready in under 30 minutes, making it a perfect weeknight recipe that still feels like something special. Whether you're serving it in warm tortillas or over rice for something heartier, the rich, savory flavor profile will have everyone asking for seconds—and the recipe.
-
-   This recipe not only delivers on flavor, but it also scores big when it comes to SEO optimization. Packed with high-interest keywords like *steak fajitas*, *butter steak recipe*, and *easy vegetarian fajitas*, this post is designed to rank well for casual cooks and meal planners alike.
-
-   What sets this recipe apart is the use of garlic butter, which adds a luxurious depth of flavor that’s often missing in traditional fajita recipes. The steak is marinated in a simple but effective blend of lime, cumin, and chili powder before being seared to perfection and tossed with the veg in the same pan for maximum flavor.
-
-   And for those who want to make it vegetarian or vegan, the recipe includes easy substitutions—like portobello mushrooms or tofu strips—to keep the same satisfying texture and taste.
-
-   You’ll find that the ingredients are simple and easy to find, with no obscure spices or hard-to-source proteins. Just a few pantry staples and a cut of steak (or a plant-based alternative) are all you need to make this dish come together in a flash.
-
-   The recipe also includes helpful tips for cooking steak fajitas on the stove
-```
-
 ## How it works
 
 1. The encoder takes your secret message and a shared prompt.
